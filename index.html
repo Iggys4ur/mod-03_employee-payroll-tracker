@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Employee Payroll Tracker</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,23 +17,43 @@
     </header>
     <div class="card">
       <div class="card-header">
-       <h2>Employee Roster</h2>
+        <h2>Employee Roster</h2>
       </div>
       <div class="card-body">
-       <table>
-        <thead>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Salary</th>
-          </tr>
-        </thead>
-        <tbody id="employee-table">
-        </tbody>
-       </table>
+        <!-- Employee Table -->
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table">
+            <!-- Employee rows will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="card-header">
+        <h2>Aggregate Data</h2>
+      </div>
+      <div class="card-body">
+        <!-- Aggregate Data Table -->
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody id="aggregate-data-table">
+            <!-- Aggregate data rows will be dynamically inserted here -->
+          </tbody>
+        </table>
       </div>
       <div class="card-footer">
-        <button id="add-employees-btn" class="btn">Add Employees</button>
+        <button id="add-employees-btn" class="btn" title="Click to add a new employee to the roster">Add
+          Employees</button>
       </div>
     </div>
   </div>
